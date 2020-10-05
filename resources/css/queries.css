@@ -1,0 +1,158 @@
+/* big tablet to 1200px (widths smaller that the 1140px row) */
+
+@media only screen and (max-width: 1200px) {
+.hero-text-box {
+  width: 80%;
+  padding: 0 4%;
+  /* margin-left: 125px;  */
+}
+.row { padding: 0 2%; }
+.main-nav:last-child {margin-right: 10px;}
+}
+
+/* small tablet to big tablet from 768px to 1023px*/
+@media only screen and (max-width: 1023px) {
+  .details { 
+    margin-left: 50px;
+    font-size: 95%;
+  }
+  .details ul li { margin-left: 50px;}
+}
+/* small phones to small tablets from 481px to 767px */
+@media only screen and (max-width: 768px) {
+  
+  .main-nav {
+    position: absolute;
+    right: 0px;
+    height: 85vh;
+    top: 8vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 1000;
+  }
+  .main-nav li {
+    opacity: 0;
+    margin: 50px;
+  }
+  .burger {
+    display: block;
+    float: right;
+    margin-top: 40px;  
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+  }
+
+  .skills-heading {
+    margin-left: 45px; 
+  }
+  .skills-grid {    
+    margin-left: 45px;
+    /* margin-top: 30px; */
+  }
+  .details ul li {
+    font-size: 85%;
+  }
+  .social-media {
+    margin-top: 40px; 
+  }
+  
+}
+/* small phones from 0 to 480px */
+
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 160%;
+  }
+  /***** Header *****/
+  header {
+    height:  80vh;
+  }
+  .logo {
+    height: 100px;
+    width: auto;
+  }
+  .main-nav {
+    height: 65vh;
+  }
+  .main-nav li {
+    margin: 40px;
+  }
+  .hero-text-box {
+    top: 35%;
+    left: 50%;
+  }
+  .hero-text-box h1{ 
+    font-size: 200%;
+  }
+  .hero-text-box h4{
+    font-size: 100%;
+   }
+   /****** Skills *****/
+   .skills-heading {    
+    font-size: 120%;
+    margin-left: 30px;
+    margin-top: 20px;
+   }
+   .skills-grid {
+    margin-left: 30px;
+  }
+   /****** Projects *****/
+   #section-projects {
+    height: 100vh;
+  }
+  .col { 
+    width : 100%; 
+    margin: 0 0 8% 0;
+  }
+   /****** Experience *****/
+   #section-experience {
+     height: 110vh;
+   }
+   .company {
+    font-size: 85%;
+  }
+  .details {
+    font-size: 90%;
+  }
+  .details ul li {
+    margin-left: 25px;
+    margin-bottom: 2px;
+  }
+   /****** Contact *****/
+  
+  /* .details {
+   
+    width: 80%;
+    margin-left: 150px;
+    
+  }
+  .details ul li {
+    margin-left: 50px;
+    
+  } */
+}
